@@ -49,7 +49,7 @@ echo -e " "
 
 cat /usr/share/$ThemeFolder/$ThemeName.txt
 
-echo -e "                ${LinuxVersionL1} "
-echo -e "                 ${LinuxVersionL2} "
+echo -e "                 ${LinuxVersionL1} "
+echo -e "                  ${LinuxVersionL2} "
 echo -e " "
 echo -e " ${_RESET}"
