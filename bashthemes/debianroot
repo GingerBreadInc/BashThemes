@@ -1,0 +1,57 @@
+#! /bin/bash
+
+ThemeName="debian"
+
+ThemeFolder=".themes"
+
+_RED='\033[38;5;1m'
+_GREEN='\033[38;5;34m'
+_YELLOW='\033[38;5;226m'
+_BLUE='\033[38;5;32m'
+_MAGENTA='\033[38;5;129m'
+_CYAN='\033[38;5;80m'
+_WHITE='\033[38;5;15m'
+_GRAY='\033[38;5;245m'
+_RESET=$(tput sgr0)
+_BOLD=$(tput bold)
+_BLINK=$(tput blink)
+
+c1="${_RED}"
+c2="${_WHITE}"
+c3="${_GRAY}"
+c4="${_GREEN}"
+
+force_color_prompt=yes
+export PS1="${_BOLD}${_GREEN}\u${_RESET}${_CYAN}@${_BLUE}\h${_RESET} ${_WHITE}\w: ${_RESET}"
+
+GetLinuxName=`cat /etc/os-release | grep ^NAME`
+GetLinuxVersion=`cat /etc/os-release | grep ^VERSION=`
+
+LinuxNameSplit="$(echo $GetLinuxName | cut -d'=' -f2)"
+LinuxNameReplace="${LinuxNameSplit/\"/}"
+LinuxNameReplace="${LinuxNameReplace/\"/}"
+
+LinuxVersionSplit="$(echo $GetLinuxVersion | cut -d'=' -f2)"
+LinuxVersionReplace="${LinuxVersionSplit/\"/}"
+LinuxVersionReplace="${LinuxVersionReplace/\"/}"
+
+ln1="$(echo $LinuxNameReplace | cut -d' ' -f1)"
+ln2="$(echo $LinuxNameReplace | cut -d' ' -f2)"
+lv1="$(echo $LinuxVersionReplace | cut -d' ' -f1)"
+lv2="$(echo $LinuxVersionReplace | cut -d' ' -f2)"
+
+LinuxVersionL1="${_BOLD}${c2}${ln1} ${c2}${ln2} ${_RESET}"
+LinuxVersionL2="${c3}v${lv1} ${c3}${lv2}"
+
+clear
+
+echo -e " "
+
+cat /usr/share/$ThemeFolder/$ThemeName.txt
+
+echo -e "                    ${LinuxVersionL1} "
+echo -e "                   ${LinuxVersionL2} "
+echo -e " "
+echo -e "${_BLINK}${_RED}              Adminstrative Terminal"
+echo -e " "
+echo -e " ${_RESET}"
