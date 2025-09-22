@@ -22,7 +22,7 @@ c3="${_GRAY}"
 c4="${_GREEN}"
 
 force_color_prompt=yes
-export PS1="${_BOLD}${_GREEN}\u${_RESET}${_CYAN}@${_BLUE}\h${_RESET} ${_WHITE}\w: ${_RESET}"
+export PS1="${_BOLD}${_RED}\u${_RESET}${_MAGENTA}@${_BLUE}\h${_RESET}${_WHITE} \w: ${_RESET}"
 
 GetLinuxName=`cat /etc/os-release | grep ^NAME`
 GetLinuxVersion=`cat /etc/os-release | grep ^VERSION=`
