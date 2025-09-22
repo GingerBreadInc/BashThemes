@@ -23,7 +23,7 @@ source /usr/share/bashthemes/umbrella2
 nano ~/.bash_profile
 source ~/.bashrc
 ```
-###Install-/Update-Script
+### Install-/Update-Script
 
 ```bash
 loadTheme="linuxmint"
@@ -54,6 +54,7 @@ rm -rf ~/theme_download
 echo "Modify '.bashrc' and '.bash_profile' files"
 sed -i '/#load bashtheme/d' ~/.bashrc
 sed -i '/#load bashtheme/d' ~/.bash_profile
-```
+
 echo "source /usr/share/bashthemes/${loadTheme} #load bashtheme" >> ~/.bashrc
-echo "source ~/.bashrc #load bashtheme" >> ~/.bash_profile<img width="846" height="566" alt="image" src="https://github.com/user-attachments/assets/09f4c628-8971-4114-a413-7378d5ade51b" />
+echo "source ~/.bashrc #load bashtheme" >> ~/.bash_profile
+```
