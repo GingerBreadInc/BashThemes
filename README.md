@@ -1,7 +1,7 @@
 ### Install-/Update-Script
 
 ```bash
-loadTheme="linuxmint"
+loadTheme="debian"
 
 if dpkg -s unzip &>/dev/null; then
   echo "'unzip' is already installed."
