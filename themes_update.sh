@@ -1,4 +1,9 @@
 loadTheme="debian"
+#loadTheme="debianroot"
+#loadTheme="linuxmint"
+#loadTheme="linuxmintroot"
+#loadTheme="umbrella"
+#loadTheme="umbrellasmall"
 
 if dpkg -s unzip &>/dev/null; then
   echo "'unzip' is already installed."
