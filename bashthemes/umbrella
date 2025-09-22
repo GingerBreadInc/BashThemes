@@ -53,7 +53,7 @@ cat /usr/share/$ThemeFolder/$ThemeName.txt
 echo -e " "
 echo -e "${_BOLD}${_WHITE}                    Umbrella Corporation"
 echo -e " "
-echo -e "${_GRAY}                Our Bussines is Life itself."
+echo -e "${_GRAY}                Our Business is Life itself."
 echo -e " "
 echo -e " "
 echo -e "${_BLINK}${_RED}                   Adminstrative Terminal"
