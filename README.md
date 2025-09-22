@@ -27,9 +27,10 @@ cd ~
 rm -rf ~/theme_download
 
 echo "Modify '.bashrc' and '.bash_profile' files"
+touch ~/.bashrc
+touch ~/.bash_profile
 sed -i '/#load bashtheme/d' ~/.bashrc
 sed -i '/#load bashtheme/d' ~/.bash_profile
-
 echo "source /usr/share/bashthemes/${loadTheme} #load bashtheme" >> ~/.bashrc
 echo "source ~/.bashrc #load bashtheme" >> ~/.bash_profile
 ```
