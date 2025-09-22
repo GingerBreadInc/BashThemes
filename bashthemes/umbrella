@@ -48,7 +48,7 @@ clear
 echo -e " "
 echo -e " "
 
-cat /usr/share/$ThemeFolder/$ThemeName.txt
+cat /usr/share/$ThemeFolder/$ThemeName.logo
 
 echo -e " "
 echo -e "${_BOLD}${_WHITE}                    Umbrella Corporation"
