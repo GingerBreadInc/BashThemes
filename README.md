@@ -17,7 +17,7 @@ rm -rf ~/theme_download
 ```
 ```bash
 nano ~/.bashrc
-source /usr/share/basthemes/umbrella2
+source /usr/share/bashthemes/umbrella2
 ```
 ```bash
 nano ~/.bash_profile
