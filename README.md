@@ -1,3 +1,5 @@
+
+```bash
 apt install unzip
 
 mkdir -p ~/theme_download
@@ -12,3 +14,4 @@ cp -r bashthemes/ /usr/share/
 
 cd ~
 rm -rf ~/theme_download
+```
