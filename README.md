@@ -15,3 +15,11 @@ cp -r bashthemes/ /usr/share/
 cd ~
 rm -rf ~/theme_download
 ```
+```bash
+nano ~/.bashrc
+source /usr/share/basthemes/umbrella2
+```
+```bash
+nano ~/.bash_profile
+source ~/.bashrc
+```
