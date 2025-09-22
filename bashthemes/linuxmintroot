@@ -47,7 +47,7 @@ clear
 
 echo -e " "
 
-cat /usr/share/$ThemeFolder/$ThemeName.txt
+cat /usr/share/$ThemeFolder/$ThemeName.logo
 
 echo -e "                    ${LinuxVersionL1} "
 echo -e "                   ${LinuxVersionL2} "
