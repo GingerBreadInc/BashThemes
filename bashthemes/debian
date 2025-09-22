@@ -2,7 +2,7 @@
 
 ThemeName="debian"
 
-ThemeFolder=".themes"
+ThemeFolder="bashthemes"
 
 _RED='\033[38;5;1m'
 _GREEN='\033[38;5;34m'
